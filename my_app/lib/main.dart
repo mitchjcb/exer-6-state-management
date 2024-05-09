@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_app/screen/Checkout.dart';
 import 'package:my_app/screen/MyCart.dart';
 import 'package:my_app/screen/MyCatalog.dart';
 import 'package:provider/provider.dart';
@@ -24,6 +25,7 @@ class MyApp extends StatelessWidget {
       routes: {
         "/cart":(context) => const MyCart(),
         "/products":(context) => const MyCatalog(),
+        "/checkout":(context) => const Checkout(),
       },
       home: const MyCatalog(),
     );

@@ -26,6 +26,12 @@ class MyCart extends StatelessWidget {
                       context.read<ShoppingCart>().removeAll();
                     },
                     child: const Text("Reset")),
+                  //checkout button
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/checkout');
+                    },
+                    child: const Text("Checkout")),
                 ]))),
           TextButton(
             child: const Text("Go back to Product Catalog"),
